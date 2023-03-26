@@ -14,11 +14,22 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "consistent-return": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", "tsx", "ts"] }
-    ]
+    ],
+    "array-callback-return": "off",
+    "no-underscore-dangle": "off"
   }
 }
