@@ -15,14 +15,12 @@ class GenerateQrSvgController {
   }
 
   public async generate() {
-    const { name } = this.req.params
+    const { url } = this.req.params
 
     try {
-      const svg = this.service.GenerateQrPayload(name)
+      const svg = this.service.GenerateQrPayload(url)
       this.res.type("svg")
       svg.pipe(this.res)
-
-      return this.res.status(200).send(svg)
     } catch (error) {
       this.next(error)
     }

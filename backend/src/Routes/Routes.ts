@@ -13,7 +13,7 @@ routes.post(
   (req, res, next) => new GenerateQrController(req, res, next).generate()
 )
 
-routes.get("/generateQrSvg/:name", (req, res, next) =>
+routes.get("/generateQrSvg/:url", (req, res, next) =>
   new GenerateQrSvgController(req, res, next).generate()
 )
 
