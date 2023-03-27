@@ -15,12 +15,13 @@ module.exports = {
         "semi-white": "#F8F8F8",
         "border-gray": "#E2E2E2",
         "black-not-strong": "#343338",
+        "modal-backdrop": "rgba(0, 0, 0, 0.6)"
       },
       screens: {
         'mini': {'max':  '450px' },
         '2mini': {'max': '500px'},
          'sm':  {'max': '767px'},
-         'md':  {'min': '768px', 'max': '1023px'},
+         'md':  {'min': '500px', 'max': '1023px'},
          '2md': {'max': '900px'},
          '2md-min': { 'min': '900px'},
          'lg':  {'min': '1024px'},

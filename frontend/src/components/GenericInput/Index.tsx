@@ -1,8 +1,13 @@
 import React from "react"
 
-import IGenericInput from "../../shared/interfaces/IGenericInput"
+import GenericInputTypes from "../../shared/interfaces/GenericInput"
 
-function GenericInput({ setValue, value, title, placeholder }: IGenericInput) {
+function GenericInput({
+  setValue,
+  value,
+  title,
+  placeholder,
+}: GenericInputTypes) {
   return (
     <label
       htmlFor={title}

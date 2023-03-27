@@ -5,6 +5,14 @@
 
 @layer components {
   .input-title {
-    @apply max-w-[160px] 2mini:max-w-[100px] rounded rounded-r-none flex justify-center  bg-border-gray py-2 px-16 border-r-0 border border-gray-300;
+    @apply max-w-[160px] 2mini:max-w-[100px] rounded rounded-r-none flex justify-center bg-border-gray py-2 px-16 border-r-0 border border-gray-300;
+  }
+
+  .modal-backdrop {
+    @apply fixed h-screen w-screen top-0 left-0 bg-modal-backdrop;
+  }
+
+  .modal-content-wrapper {
+    @apply fixed w-[50%] h-[60%] md:w-[70%]  2mini:w-[90%] bg-white m-auto top-0 left-0 bottom-0 right-0 p-14;
   }
 }
