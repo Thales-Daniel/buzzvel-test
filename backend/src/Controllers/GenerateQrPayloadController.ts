@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express"
-import GenerateQrService from "../Services/GenerateQrService"
+import GenerateQrService from "../Services/GenerateQrPayloadService"
 import { IPayload } from "../shared/interfaces/IPayload"
 
 class GenerateQrController {
